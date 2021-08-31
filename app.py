@@ -25,7 +25,7 @@ class File(db.Model):
 
 
 def scheduledTask():
-    expiration_time=datetime.utcnow() - timedelta(hours=0, minutes=3) 
+    expiration_time=datetime.utcnow() - timedelta(hours=0, minutes=15) 
     with app.app_context():
         expired_files=File.query.filter(File.upload_time <= expiration_time).all()
 
