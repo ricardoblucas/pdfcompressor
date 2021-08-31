@@ -15,4 +15,4 @@ Para correr a aplicação e fazer o deploy para azure é necessário primeiro cr
 
  docker build -t mybuildimage
  
-Para puxar a imagem para o Azure, pode-se seguir a seguinte documentação da microsof: https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-docker-cli?tabs=azure-cli
+Para puxar a imagem para o Azure, pode-se seguir a seguinte documentação da microsoft: https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-docker-cli?tabs=azure-cli
