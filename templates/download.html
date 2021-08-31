@@ -1,0 +1,15 @@
+{% extends "base_template.html" %}
+{% block content %}
+  
+  <p>Your file has been compressed and is ready to be downloaded.</p>
+  <p>{{ file }} - {{ file_size }} </p>
+
+  <form action="{{ url_for('download_file', filehash=filehash) }}">
+    <p><button type="submit" value="Download" style="margin-top: 20px;">Download</button></p>
+  </form>
+
+  <form action="{{ url_for('index')}}">
+    <p><button type="submit" value="Compress another file">Compress another file</button></p>
+  </form>
+
+{% endblock %}

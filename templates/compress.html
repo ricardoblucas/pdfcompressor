@@ -1,0 +1,11 @@
+{% extends "base_template.html" %}
+{% block content %}
+  
+  <p>Your file has been uploaded and is ready to be compressed.</p>
+  <p>{{ file }} - {{ file_size }} </p>
+
+  <form method="POST" action="">
+    <p><button type="submit" name="submit_button"  value="Compress" style="margin-top: 20px;">Compress</button></p>
+  </form>
+  
+{% endblock %}

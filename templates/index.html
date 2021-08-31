@@ -1,0 +1,12 @@
+{% extends "base_template.html" %}
+{% block content %}
+
+  <p>Please select and upload the file to be compressed.</p>
+
+  <form method="POST" action="" enctype="multipart/form-data">
+    <p><input style="margin-top: 20px;" id="file-upload" type="file" name="file" accept=".pdf"></p>
+    <p><button type="submit">Upload</button></p>
+  </form>
+
+{% endblock %}
+   
