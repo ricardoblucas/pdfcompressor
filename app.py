@@ -54,7 +54,7 @@ def create_app():
 
 
     scheduler = APScheduler()
-    scheduler.add_job(id ='Scheduled task', func = scheduledTask, trigger = 'interval', seconds=5)
+    scheduler.add_job(id ='Scheduled task', func = scheduledTask, trigger = 'interval', minutes=5)
     scheduler.start()
 
     return flaskapp
@@ -202,11 +202,11 @@ def download_file(filehash):
         filename=found_file.filename[:-4]+'_compressed.pdf'
     else:
         abort(404)
-    return send_file(file_path, as_attachment=True, download_name=filename)
+    return send_file(file_path, as_attachment=True, attachment_filename=filename)
 
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
 
 
- 
+#python -m flask run --host=127.0.0.1 --port=5000 

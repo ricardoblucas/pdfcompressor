@@ -3,7 +3,6 @@ html {
   font-family: 'Mulish', sans-serif; /* this should be the rest of the output you got from Google fonts */
 }
 
-
 body {
   width:100%; 
   max-width:600px;
@@ -44,23 +43,3 @@ button {
   text-decoration:none;
   -webkit-text-size-adjust:none;
 }
-
-/* table {
-  
-  padding: 20px 25px 20px 25px;
-  margin: 0px auto;
-  color:#787878;
-  font-size: 14px;
-}
-
-tr {
-  height: 25px;
-}
-
-th {
-  height: 20px;
-  color:#424242;
-  background-color: #c1d3c0;
-  background-color: #F4F4F4;
-  text-align: center;
-} */
